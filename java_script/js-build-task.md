@@ -120,6 +120,8 @@ This setup is ideal for deploying single-page applications (SPAs) like those bui
 
  
 
-## ** 9.Final Output: **
+## ** 9.Final Output: 
 
-![](./img/Screenshot%20(2).png)
+![Image](https://github.com/user-attachments/assets/dc7ce972-3d65-4626-ab77-04d947e24a27)
+
+![Image](https://github.com/user-attachments/assets/1d5387ba-260b-468e-8a18-28f9801d0578)

@@ -51,12 +51,20 @@ sudo systemctl enable nexus
 sudo systemctl start nexus
 Check the status:
 
+![Image](https://github.com/user-attachments/assets/b59ae23b-056d-434b-86a7-7339fd56f103)
+
+![Image](https://github.com/user-attachments/assets/77eb484d-ffc8-4e41-b951-9b7a90afeb4b)
+
 
 sudo systemctl status nexus
 9. 🔑 Retrieve Admin Password
+![Image](https://github.com/user-attachments/assets/531296c8-c50f-4cc7-81e0-51a4770760fa)
+
 
 sudo vi /opt/sonatype-work/nexus3/admin.password
 Copy the admin password shown there — you’ll need it for the web login.
+
+![Image](https://github.com/user-attachments/assets/00969d20-574b-4041-9c6b-cafa006cdf57)
 
 🌐 Access Nexus UI
 Open your browser and navigate to:
@@ -64,9 +72,9 @@ Open your browser and navigate to:
 
 http://<public-ip-of-nexus-server>:8081
 Login: admin
-
 Password: (from admin.password file)
 
+![Image](https://github.com/user-attachments/assets/14f0c42b-f6d3-4427-b394-75aea21878ef)
 ✅ Objective
 To prepare a build server on Ubuntu to:
 
@@ -115,6 +123,12 @@ cd java_code/
 8. 🛠️ Review/Edit pom.xml to Add Nexus Deployment Info
 
 sudo vi pom.xml
+copy URL from:
+![Image](https://github.com/user-attachments/assets/14f0c42b-f6d3-4427-b394-75aea21878ef)
+
+![Image](https://github.com/user-attachments/assets/fc647203-2c06-4e18-af93-352f05814c79)
+
+
 Inside <project>, add this block:
 
 
@@ -159,3 +173,9 @@ Go to "Browse → maven-releases"
 
 You should see your artifact under:
 groupId/artifactId/version/artifact-version.jar
+
+![Image](https://github.com/user-attachments/assets/24a0a7d0-f6a6-4d26-94c4-f328f7ae3310)
+
+![Image](https://github.com/user-attachments/assets/fe38e738-9d77-46f4-9803-a59981442468)
+
+![Image](https://github.com/user-attachments/assets/e385c279-f098-4a18-abe9-c34b1fc62191)
